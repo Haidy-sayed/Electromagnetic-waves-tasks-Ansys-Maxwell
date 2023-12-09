@@ -1,0 +1,105 @@
+problem 1
+p 0
+attrib
+
+attribute 4
+a 1 6 Box1 1 0 0 0
+local_cs
+  b_origin
+  x    0.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_x
+  x    1.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_y
+  x    0.00000000000000e+00 y    1.00000000000000e+00 z    0.00000000000000e+00
+  b_type CARTESIAN
+epsi
+v   1.00000000000000e+00 v   1.00000000000000e+00 v   1.00000000000000e+00
+cond
+v   0.00000000000000e+00 v   0.00000000000000e+00 v   0.00000000000000e+00
+excitation none 
+v 0
+a 2 34 Box2 1 0 0 0
+local_cs
+  b_origin
+  x    0.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_x
+  x    1.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_y
+  x    0.00000000000000e+00 y    1.00000000000000e+00 z    0.00000000000000e+00
+  b_type CARTESIAN
+epsi
+v   1.00000000000000e+00 v   1.00000000000000e+00 v   1.00000000000000e+00
+cond
+v   0.00000000000000e+00 v   0.00000000000000e+00 v   0.00000000000000e+00
+excitation none 
+v 0
+a 3 62 Container 1 0 0 0
+local_cs
+  b_origin
+  x    0.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_x
+  x    1.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_y
+  x    0.00000000000000e+00 y    1.00000000000000e+00 z    0.00000000000000e+00
+  b_type CARTESIAN
+epsi
+v   1.00000000000000e+00 v   1.00000000000000e+00 v   1.00000000000000e+00
+cond
+v   0.00000000000000e+00 v   0.00000000000000e+00 v   0.00000000000000e+00
+excitation none 
+v 0
+a 4 0 background 0 0 0 0
+local_cs
+  b_origin
+  x    0.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_x
+  x    1.00000000000000e+00 y    0.00000000000000e+00 z    0.00000000000000e+00
+  b_new_y
+  x    0.00000000000000e+00 y    1.00000000000000e+00 z    0.00000000000000e+00
+  b_type CARTESIAN
+epsi
+v   1.00000000000000e+00 v   1.00000000000000e+00 v   1.00000000000000e+00
+cond
+v   0.00000000000000e+00 v   0.00000000000000e+00 v   0.00000000000000e+00
+excitation none 
+v 0
+end_attribute
+
+bound_types
+bound_type 4
+b 1 neuman mult neumann 1 
+b 2 Voltage1  mult voltage v   0.00000000000000e+00  1.00000000000000e+00
+b 3 Voltage2  mult voltage v   1.20000000000000e-02  1.00000000000000e+00
+b 4 Voltage3  mult voltage v  -1.20000000000000e-02  1.00000000000000e+00
+end_bound_type
+
+bound_opers
+bound_ops      19
+b_op_init
+b_op_face Voltage1 63 1
+b_op_face Voltage1 64 1
+b_op_face Voltage1 65 1
+b_op_face Voltage1 66 1
+b_op_face Voltage1 67 1
+b_op_face Voltage1 68 1
+b_op_face Voltage2 7 1
+b_op_face Voltage2 8 1
+b_op_face Voltage2 9 1
+b_op_face Voltage2 10 1
+b_op_face Voltage2 11 1
+b_op_face Voltage2 12 1
+b_op_face Voltage3 35 1
+b_op_face Voltage3 36 1
+b_op_face Voltage3 37 1
+b_op_face Voltage3 38 1
+b_op_face Voltage3 39 1
+b_op_face Voltage3 40 1
+end_bound_ops
+
+end_bound_info
+
+thresholds
+perfect_conductor 1.00000000000000e+11
+perfect_insulator 1.00000000000000e+00
+end_thresholds
+end_problem

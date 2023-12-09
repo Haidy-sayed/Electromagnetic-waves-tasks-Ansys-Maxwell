@@ -1,0 +1,152 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002022, month=000000000003, day=000000000020, hour=000000000023, min=000000000032, sec=000000000042)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000005629, lin=000000000131, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	SolutionName='AdaptivePass'
+	SolutionID=14
+	V=0
+	$begin 'States'
+		F(VID=44, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'NFSP'
+		$begin 'SubData'
+			ID=10
+			NFSP(VID=44, Ver=0, File='DV44_SOL14_NFSP10_V0.sd')
+		$end 'SubData'
+	$end 'NFSP'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock4'
+	'SolutionKey(SimSetup=13, Instance=\'\', Solution=-3, VersionID=0)'='SolutionBlock5'
+	'SolutionKey(SimSetup=13, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock3'
+	'SolutionKey(SimSetup=13, Instance=\'SolutionDefinition\', Solution=14, VersionID=0)'='SolutionBlock1'
+	'SolutionKey(SimSetup=13, Instance=\'SolutionDefinition\', Solution=15, VersionID=0)'='SolutionBlock2'
+$end 'BlockMapName'
+$begin 'SolutionBlock2'
+	SolutionName='LastAdaptive'
+	SolutionID=15
+	V=0
+	$begin 'States'
+		F(VID=44, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		IDDblMap(49, -1)
+		$begin 'DataMap'
+			VID=44
+			Ver=0
+			Field(DblID=49, Dir='DV44_SOL15_V0.Field49/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock3'
+	SimSetupID=13
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		IDDblMap(47, -1)
+		$begin 'DataMap'
+			VID=44
+			Ver=0
+			M(DblID=47, Dir='DV44_S13_V0.cmesh47/')
+		$end 'DataMap'
+	$end 'CurrMeshes'
+	$begin 'LastPassNumbers'
+		LP(VID=44, Ver=0, P=24)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=44, Ver=0, File='DV44_S13_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=44, Ver=0, Dir='DV44_S13_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock3'
+$begin 'SolutionBlock4'
+	ProductName=''
+	CircuitName='Maxwell3DDesign1'
+	VersionID=9
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=53
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=44)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=44, Ver=9, Dir='DV44_V9.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=44, Ver=9, Dir='DV44_MI0_V9.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock4'
+$begin 'SolutionBlock5'
+	ConvSetupName='ms'
+	MaxPasses='100'
+	MinPasses='2'
+	ConvTarget='(0.01, 0.01)'
+	ConvTargetConsecPasses='N/A'
+	ConvCurrentConsecPasses='N/A'
+	c(tet=134, p=1, de_ee='(107.99, N/A)', te=1.188109578572832e-19, ee=107.9878106834528)
+	c(tet=174, p=2, de=13.73006189852672, de_ee='(23.866, 13.73)', te=1.024981398012457e-19, ee=23.86573103512449)
+	c(tet=227, p=3, de=2.09027085334942, de_ee='(10.336, 2.0903)', te=1.003556510597549e-19, ee=10.33554415536074)
+	c(tet=299, p=4, de=3.796654789217134, de_ee='(5.3358, 3.7967)', te=9.65454934275447e-20, ee=5.335757610962869)
+	c(tet=389, p=5, de=0.6643210059751259, de_ee='(3.7743, 0.66432)', te=9.590412143438318e-20, ee=3.774290024815353)
+	c(tet=507, p=6, de=2.211915178808994, de_ee='(3.6546, 2.2119)', te=9.378280361527265e-20, ee=3.654640361233874)
+	c(tet=664, p=7, de=0.5170820130908105, de_ee='(2.9922, 0.51708)', te=9.32978696064058e-20, ee=2.992188696364442)
+	c(tet=868, p=8, de=1.904816159578716, de_ee='(2.6638, 1.9048)', te=9.15207167096003e-20, ee=2.663809872873458)
+	c(tet=1130, p=9, de=1.387031112773035, de_ee='(2.4779, 1.387)', te=9.025129589420528e-20, ee=2.477872779160723)
+	c(tet=1472, p=10, de=1.000620106840542, de_ee='(2.2137, 1.0006)', te=8.934822328080371e-20, ee=2.213671477035178)
+	c(tet=1917, p=11, de=0.9447732299598404, de_ee='(1.7845, 0.94477)', te=8.850408518580193e-20, ee=1.784499559772291)
+	c(tet=2494, p=12, de=1.117276173555629, de_ee='(1.5795, 1.1173)', te=8.751525012939759e-20, ee=1.579470784809933)
+	c(tet=3246, p=13, de=0.957973738155418, de_ee='(1.4725, 0.95797)', te=8.667687701627693e-20, ee=1.472518261636561)
+	c(tet=4223, p=14, de=0.5009784749215556, de_ee='(1.1369, 0.50098)', te=8.624264451969115e-20, ee=1.136909585190853)
+	c(tet=5493, p=15, de=0.560525232215308, de_ee='(0.92423, 0.56053)', te=8.575923273622853e-20, ee=0.9242254213573075)
+	c(tet=7146, p=16, de=0.5057085517682562, de_ee='(0.8106, 0.50571)', te=8.532554096235058e-20, ee=0.8106026785053017)
+	c(tet=9294, p=17, de=0.4676602727168669, de_ee='(0.65205, 0.46766)', te=8.492650730478891e-20, ee=0.6520491761505883)
+	c(tet=12085, p=18, de=0.3489628683652325, de_ee='(0.52626, 0.34896)', te=8.463014532889571e-20, ee=0.5262618703724656)
+	c(tet=15714, p=19, de=0.2234331472144929, de_ee='(0.4541, 0.22343)', te=8.444105353169516e-20, ee=0.4541031978759523)
+	c(tet=20431, p=20, de=0.2540905724003382, de_ee='(0.37596, 0.25409)', te=8.42264967754356e-20, ee=0.3759605771157858)
+	c(tet=26563, p=21, de=0.2683955425868054, de_ee='(0.32675, 0.2684)', te=8.400043661241331e-20, ee=0.3267547829238807)
+	c(tet=34532, p=22, de=0.1987802763276615, de_ee='(0.25063, 0.19878)', te=8.383346031239872e-20, ee=0.2506337857889749)
+	c(tet=44896, p=23, de=0.1763401858579133, de_ee='(0.19435, 0.17634)', te=8.368562823267271e-20, ee=0.1943495002363372)
+	c(tet=58367, p=24, de=0.1187210669678894, de_ee='(0.15433, 0.11872)', te=8.35862757619361e-20, ee=0.1543292638175403)
+$end 'SolutionBlock5'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock5(pos=2681, lin=99, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=762, lin=21, lvl=0)
+		SolutionBlock2(pos=1228, lin=28, lvl=0)
+		SolutionBlock3(pos=1647, lin=50, lvl=0)
+		SolutionBlock4(pos=2192, lin=76, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=5629, lin=131, lvl=0)
+	$end '$index$'
+$end '$index$'
